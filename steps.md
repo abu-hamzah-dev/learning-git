@@ -137,3 +137,11 @@ Next, modify the readme file by changing the header and add a new line
     28. git pull
 
     29. git checkout dev-affan
+
+---
+
+    30. git merge main
+
+    31. git add .
+
+    32. git commit -m 'resolve merge conflicts'
