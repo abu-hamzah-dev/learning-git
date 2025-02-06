@@ -1,3 +1,17 @@
+# Typical Workflow
+1. Clone the repository
+2. Create a new branch from the `main` or another branch
+3. Make your changes
+4. Push the branch to the remote repo
+5. Open a Pull Request
+6. Merge the changes
+7. Pull the merged changes into your local `main` branch
+8. Repeat from step 2
+
+
+---
+
+
 ## local repo (git)
     1. git init
 used to initialize the project.
@@ -61,3 +75,18 @@ used to change selected branch to _'branch-name'_
 
     15. git checkout -b feature-branch
 used to create branch and change directly the selected branch into 'feature-branch'
+
+
+    16. git add .
+used to add all files in to the stage
+
+
+    17. git commit -m 'modify readme & add steps.md'
+used to commit (all files in stage) with message _'modify readme & add steps.md'_
+
+
+    18. git push -u origin feature-branch
+used to push current stage of local branch _'feature-branch'_ into remote branch _'feature-branch'_ (this makes establish a tracking relationship between local repo and remote repo, so in the future you just need to use `git push` and `git pull`)
+ 
+
+## merging & resolving merge conflicts
