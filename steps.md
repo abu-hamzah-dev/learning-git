@@ -12,6 +12,20 @@
 ---
 
 
+# Typical Workflow
+1. Clone the repository
+2. Create a new branch from the `main` or another branch
+3. Make your changes
+4. Push the branch to the remote repo
+5. Open a Pull Request
+6. Merge the changes
+7. Pull the merged changes into your local `main` branch
+8. Repeat from step 2
+
+
+---
+
+
 ## local repo (git)
     1. git init
 used to initialize the project.
@@ -90,3 +104,46 @@ used to push current stage of local branch _'feature-branch'_ into remote branch
  
 
 ## merging & resolving merge conflicts
+
+Create 2 branch:
+    
+    19. git branch dev-maul
+used to create branch with name `dev-maul` (make sure doing this command in `main` branch, because this command will clone all files in current branch)
+
+    20. git checkout -b dev-affan
+used to create branch and directly change branch into it ( `dev-affan` )
+
+
+Next, modify the readme file by changing the header and add a new line
+
+    21. git add .
+
+    22. git commit -m 'Modify readme by changing the header and adding a new line'
+
+    23. git push -u origin dev-affan
+
+----
+
+    24. git checkout dev-maul
+
+    25. git commit -m 'today i woke up and drank soe coffeethen i sat at the table and added a few lines of code
+
+    26. git push -u origin dev-maul
+
+---
+
+    27. git checkout main
+
+    28. git pull
+
+    29. git checkout dev-affan
+
+---
+
+    30. git merge main
+
+    31. git add .
+
+    32. git commit -m 'resolve merge conflicts'
+
+    33. git push
