@@ -90,6 +90,7 @@ used to push current stage of local branch _'feature-branch'_ into remote branch
  
 
 ## merging & resolving merge conflicts
+
 Create 2 branch:
     
     19. git branch dev-maul
@@ -97,3 +98,13 @@ used to create branch with name `dev-maul` (make sure doing this command in `mai
 
     20. git checkout -b dev-affan
 used to create branch and directly change branch into it ( `dev-affan` )
+
+
+Next, modify the readme file by changing the header and add a new line
+
+    21. git add .
+
+    22. git commit -m 'Modify readme by changing the header and adding a new line'
+
+    23. git push -u origin dev-affan
+
