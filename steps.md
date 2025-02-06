@@ -145,3 +145,5 @@ Next, modify the readme file by changing the header and add a new line
     31. git add .
 
     32. git commit -m 'resolve merge conflicts'
+
+    33. git push
