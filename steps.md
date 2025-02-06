@@ -90,3 +90,10 @@ used to push current stage of local branch _'feature-branch'_ into remote branch
  
 
 ## merging & resolving merge conflicts
+Create 2 branch:
+    
+    19. git branch dev-maul
+used to create branch with name `dev-maul` (make sure doing this command in `main` branch, because this command will clone all files in current branch)
+
+    20. git checkout -b dev-affan
+used to create branch and directly change branch into it ( `dev-affan` )
